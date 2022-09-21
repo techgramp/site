@@ -1,0 +1,35 @@
+body {
+  background: rgb(43,43,43);
+  background: linear-gradient(90deg, rgba(43,43,43,1) 19%, rgba(164,68,83,1) 52%, rgba(242,194,178,1) 83%);
+}
+main {
+  width:80%;
+  margin:auto;
+  background-color: #FEFEFE;
+  border:5px #333 solid;
+}
+#logo {
+  background-image: url("logo.jpg");
+  background-size: 100% 100%;
+  height:600px;
+  width:600px;
+  margin:auto;
+}
+nav {
+  text-align: center;
+  height:50px;
+  margin:20px;
+}
+nav a {
+  margin:10px;
+  text-decoration: none;
+  padding:15px;
+  font-size:20px;
+  color: #A44451;
+  border: 5px #A44451 solid;
+}
+nav a:hover {
+  background-color:#A44451;
+  color:#FFF;
+  border: 5px #A44451 solid;
+}
