@@ -1,12 +1,17 @@
 body {
-  background: rgb(43,43,43);
-  background: linear-gradient(90deg, rgba(43,43,43,1) 19%, rgba(164,68,83,1) 52%, rgba(242,194,178,1) 83%);
+  background: hsla(141, 54%, 86%, 1);
+
+  background: linear-gradient(90deg, hsla(141, 54%, 86%, 1) 0%, hsla(333, 73%, 85%, 1) 50%, hsla(211, 58%, 79%, 1) 100%);
+
+  background: -moz-linear-gradient(90deg, hsla(141, 54%, 86%, 1) 0%, hsla(333, 73%, 85%, 1) 50%, hsla(211, 58%, 79%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CAEFD7", endColorstr="#F5BFD7", GradientType=1 );
 }
 main {
   width:80%;
   margin:auto;
   background-color: #FEFEFE;
-  border:5px #333 solid;
+  border:3px #333 solid;
 }
 #logo {
   background-image: url("logo.jpg");
@@ -17,19 +22,31 @@ main {
 }
 nav {
   text-align: center;
-  height:50px;
-  margin:20px;
+  margin-bottom:60px;
+  margin-top:10px;
 }
 nav a {
-  margin:10px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:15px;
+  margin-bottom:15px;
+  padding:2%;
   text-decoration: none;
-  padding:15px;
-  font-size:20px;
-  color: #A44451;
-  border: 5px #A44451 solid;
+  font-size:25px;
+  color: #FFF;
+  background-color:#A44451;
+  border:2px #A44451 solid;
 }
 nav a:hover {
-  background-color:#A44451;
-  color:#FFF;
-  border: 5px #A44451 solid;
+  color: #A44451;
+  background-color:#FEFEFE;
+}
+
+@media only screen and (max-width: 1000px) {
+  nav a {
+    font-size:50px;
+    width:60%;
+    padding:3%;
+    display: block;
+  }
 }
