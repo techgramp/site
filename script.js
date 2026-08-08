@@ -53,7 +53,7 @@
   });
   // reset if resized back to desktop while open
   window.addEventListener("resize", function () {
-    if (window.innerWidth > 1140 && links.classList.contains("open")) setMenu(false);
+    if (window.innerWidth > 1200 && links.classList.contains("open")) setMenu(false);
   });
 
   /* ---------- scroll reveal ---------- */
