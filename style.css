@@ -1306,7 +1306,7 @@ html:not(.theme-night-pre) body:not(.theme-night) .gb-summary li,
 .svc-body { padding: 24px; }
 .svc-price { color: #8F6522; font-weight: 800; margin: 2px 0 10px; }
 .link-arrow { font-weight: 800; color: #8F6522; text-decoration: none; display: inline-block; }
-.link-arrow::after { content: " \\2192"; display: inline-block; transition: transform .2s ease; }
+.link-arrow::after { content: " \2192"; display: inline-block; transition: transform .2s ease; }
 .link-arrow:hover::after { transform: translateX(4px); }
 .preview-links { display: flex; gap: 26px; flex-wrap: wrap; justify-content: center; margin-top: 28px; }
 
