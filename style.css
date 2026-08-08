@@ -615,51 +615,51 @@ section[id] { scroll-margin-top: 92px; }
    cannot be auto-darkened regardless of browser behavior.
    ============================================================ */
 @media (prefers-color-scheme: dark) {
-  html:not(.theme-night), body:not(.theme-night) {
+  html:not(.theme-night-pre), html:not(.theme-night-pre) body:not(.theme-night) {
     background-color: #FAF6EF !important;
     color: #241E1E !important;
   }
   .facts, .amber, .services, .includes, .personal, .gallery, .reviews,
-  body:not(.theme-night) .how, body:not(.theme-night) .woodlands, body:not(.theme-night) .faq, body:not(.theme-night) .visit, body:not(.theme-night) .name-note, body:not(.theme-night) .section, body:not(.theme-night) section, body:not(.theme-night) header, body:not(.theme-night) footer {
+  html:not(.theme-night-pre) body:not(.theme-night) .how, html:not(.theme-night-pre) body:not(.theme-night) .woodlands, html:not(.theme-night-pre) body:not(.theme-night) .faq, html:not(.theme-night-pre) body:not(.theme-night) .visit, html:not(.theme-night-pre) body:not(.theme-night) .name-note, html:not(.theme-night-pre) body:not(.theme-night) .section, html:not(.theme-night-pre) body:not(.theme-night) section, html:not(.theme-night-pre) body:not(.theme-night) header, html:not(.theme-night-pre) body:not(.theme-night) footer {
     background-color: transparent !important;
   }
-  body:not(.theme-night) .services, body:not(.theme-night) .reviews { background-color: #F3EBDE !important; }
-  body:not(.theme-night) .personal, body:not(.theme-night) .name-note { background-color: #F5E7E0 !important; }
+  html:not(.theme-night-pre) body:not(.theme-night) .services, html:not(.theme-night-pre) body:not(.theme-night) .reviews { background-color: #F3EBDE !important; }
+  html:not(.theme-night-pre) body:not(.theme-night) .personal, html:not(.theme-night-pre) body:not(.theme-night) .name-note { background-color: #F5E7E0 !important; }
 
-  body:not(.theme-night) h1, body:not(.theme-night) h2, body:not(.theme-night) h3 { color: #3A1019 !important; }
-  body:not(.theme-night) h1 em, body:not(.theme-night) h2 em { color: #8F6522 !important; }
+  html:not(.theme-night-pre) body:not(.theme-night) h1, html:not(.theme-night-pre) body:not(.theme-night) h2, html:not(.theme-night-pre) body:not(.theme-night) h3 { color: #3A1019 !important; }
+  html:not(.theme-night-pre) body:not(.theme-night) h1 em, html:not(.theme-night-pre) body:not(.theme-night) h2 em { color: #8F6522 !important; }
   p, li, .section-sub, .fact p, .step p, .menu-desc, .review-quote,
   .faq-body, .woodlands-copy p, .amber-copy > p, .name-note p,
-  body:not(.theme-night) .includes-note, body:not(.theme-night) .pricing-note, body:not(.theme-night) .footer-est { color: #4F4540 !important; }
+  html:not(.theme-night-pre) body:not(.theme-night) .includes-note, html:not(.theme-night-pre) body:not(.theme-night) .pricing-note, html:not(.theme-night-pre) body:not(.theme-night) .footer-est { color: #4F4540 !important; }
 
-  body:not(.theme-night) .eyebrow { color: #8A5F1E !important; }
-  body:not(.theme-night) .eyebrow.light, body:not(.theme-night) .trust-line, body:not(.theme-night) .page-head-sub { color: #F3E4C4 !important; }
+  html:not(.theme-night-pre) body:not(.theme-night) .eyebrow { color: #8A5F1E !important; }
+  html:not(.theme-night-pre) body:not(.theme-night) .eyebrow.light, html:not(.theme-night-pre) body:not(.theme-night) .trust-line, html:not(.theme-night-pre) body:not(.theme-night) .page-head-sub { color: #F3E4C4 !important; }
 
   .menu-card, .review-card, .visit-card, .price-card, .addon-card,
-  body:not(.theme-night) .pack-card, body:not(.theme-night) .faq-item, body:not(.theme-night) .includes-grid, body:not(.theme-night) .amber-award, body:not(.theme-night) .woodlands-card {
+  html:not(.theme-night-pre) body:not(.theme-night) .pack-card, html:not(.theme-night-pre) body:not(.theme-night) .faq-item, html:not(.theme-night-pre) body:not(.theme-night) .includes-grid, html:not(.theme-night-pre) body:not(.theme-night) .amber-award, html:not(.theme-night-pre) body:not(.theme-night) .woodlands-card {
     background-color: #FFFFFF !important;
   }
-  body:not(.theme-night) .fact-icon { background-color: #FFFFFF !important; color: #5A1B28 !important; }
+  html:not(.theme-night-pre) body:not(.theme-night) .fact-icon { background-color: #FFFFFF !important; color: #5A1B28 !important; }
 
-  body:not(.theme-night) .hero, body:not(.theme-night) .hero-bg, body:not(.theme-night) .hero-scrim { background-color: transparent !important; }
-  body:not(.theme-night) .hero h1, body:not(.theme-night) .final-cta h2, body:not(.theme-night) .page-head h1 { color: #FFFFFF !important; }
-  body:not(.theme-night) .hero-sub, body:not(.theme-night) .final-cta p { color: #F7EFE9 !important; }
-  body:not(.theme-night) .topbar { background-color: #3A1019 !important; color: #F7EFE9 !important; }
-  body:not(.theme-night) .site-nav.scrolled { background-color: rgba(250,246,239,.96) !important; }
-  body:not(.theme-night) .brand-script { color: inherit !important; }
-  body:not(.theme-night) .nav-links a:not(.btn-book) { color: #FFFFFF !important; }
-  body:not(.theme-night) .site-nav.scrolled .nav-links a:not(.btn-book) { color: #241E1E !important; }
-  body:not(.theme-night) .site-nav.scrolled .brand-script { color: #3A1019 !important; }
+  html:not(.theme-night-pre) body:not(.theme-night) .hero, html:not(.theme-night-pre) body:not(.theme-night) .hero-bg, html:not(.theme-night-pre) body:not(.theme-night) .hero-scrim { background-color: transparent !important; }
+  html:not(.theme-night-pre) body:not(.theme-night) .hero h1, html:not(.theme-night-pre) body:not(.theme-night) .final-cta h2, html:not(.theme-night-pre) body:not(.theme-night) .page-head h1 { color: #FFFFFF !important; }
+  html:not(.theme-night-pre) body:not(.theme-night) .hero-sub, html:not(.theme-night-pre) body:not(.theme-night) .final-cta p { color: #F7EFE9 !important; }
+  html:not(.theme-night-pre) body:not(.theme-night) .topbar { background-color: #3A1019 !important; color: #F7EFE9 !important; }
+  html:not(.theme-night-pre) body:not(.theme-night) .site-nav.scrolled { background-color: rgba(250,246,239,.96) !important; }
+  html:not(.theme-night-pre) body:not(.theme-night) .brand-script { color: inherit !important; }
+  html:not(.theme-night-pre) body:not(.theme-night) .nav-links a:not(.btn-book) { color: #FFFFFF !important; }
+  html:not(.theme-night-pre) body:not(.theme-night) .site-nav.scrolled .nav-links a:not(.btn-book) { color: #241E1E !important; }
+  html:not(.theme-night-pre) body:not(.theme-night) .site-nav.scrolled .brand-script { color: #3A1019 !important; }
 
-  body:not(.theme-night) .site-footer { background-color: #241E1E !important; color: #EDE5DF !important; }
-  body:not(.theme-night) .footer-links a, body:not(.theme-night) .footer-contact a:not(.btn) { color: #EDE5DF !important; }
-  body:not(.theme-night) .final-cta { background-color: #5A1B28 !important; }
+  html:not(.theme-night-pre) body:not(.theme-night) .site-footer { background-color: #241E1E !important; color: #EDE5DF !important; }
+  html:not(.theme-night-pre) body:not(.theme-night) .footer-links a, html:not(.theme-night-pre) body:not(.theme-night) .footer-contact a:not(.btn) { color: #EDE5DF !important; }
+  html:not(.theme-night-pre) body:not(.theme-night) .final-cta { background-color: #5A1B28 !important; }
 
-  body:not(.theme-night) .btn-primary { background-color: #5A1B28 !important; color: #FFFFFF !important; }
-  body:not(.theme-night) .btn-gold, body:not(.theme-night) .btn-book { background-color: #C9A45C !important; color: #3A1019 !important; }
-  body:not(.theme-night) .btn-outline { background-color: transparent !important; color: #5A1B28 !important; border-color: #5A1B28 !important; }
+  html:not(.theme-night-pre) body:not(.theme-night) .btn-primary { background-color: #5A1B28 !important; color: #FFFFFF !important; }
+  html:not(.theme-night-pre) body:not(.theme-night) .btn-gold, html:not(.theme-night-pre) body:not(.theme-night) .btn-book { background-color: #C9A45C !important; color: #3A1019 !important; }
+  html:not(.theme-night-pre) body:not(.theme-night) .btn-outline { background-color: transparent !important; color: #5A1B28 !important; border-color: #5A1B28 !important; }
 
-  body:not(.theme-night) img { filter: none !important; }
+  html:not(.theme-night-pre) body:not(.theme-night) img { filter: none !important; }
 }
 
 /* ============================================================
@@ -722,19 +722,19 @@ section[id] { scroll-margin-top: 92px; }
 .gb-pills { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .gb-pills-4 { grid-template-columns: repeat(4, 1fr); }
 .gb-pill input { position: absolute; opacity: 0; pointer-events: none; }
-.gb-pill span {
+.gb-pill > span {
   display: flex; flex-direction: column; gap: 4px; height: 100%;
   background: var(--ivory); border: 2px solid var(--line); border-radius: 14px;
   padding: 14px 16px; font-family: var(--font-display); font-size: 1.16rem; font-weight: 600;
   color: var(--wine-deep); cursor: pointer;
   transition: border-color .2s ease, background .2s ease, transform .2s ease;
 }
-.gb-pill em {
+.gb-pill > span em {
   font-family: var(--font-body); font-style: normal; font-weight: 500;
   font-size: .78rem; line-height: 1.45; color: var(--muted);
 }
-.gb-pill-sm span { font-size: 1.02rem; padding: 12px 13px; }
-.gb-pill-sm em { font-size: .72rem; }
+.gb-pill-sm > span { font-size: 1.02rem; padding: 12px 13px; }
+.gb-pill-sm > span em { font-size: .72rem; }
 .gb-pill input:checked + span { border-color: var(--gold); background: #FBF5EA; transform: translateY(-2px); }
 .gb-pill input:focus-visible + span { outline: 3px solid var(--gold); outline-offset: 2px; }
 
@@ -809,10 +809,12 @@ section[id] { scroll-margin-top: 92px; }
 .site-nav.scrolled .theme-toggle { color: var(--wine); border-color: var(--line); background: rgba(94,31,44,.06); }
 .theme-toggle .ti-moon { display: none; }
 body.theme-night .theme-toggle .ti-sun { display: none; }
+html.theme-night-pre body .theme-toggle .ti-sun { display: none; }
 body.theme-night .theme-toggle .ti-moon { display: block; }
+html.theme-night-pre body .theme-toggle .ti-moon { display: block; }
 
 /* ---------- evening (salon after hours) palette ---------- */
-body.theme-night {
+body.theme-night, html.theme-night-pre body {
   --ivory:    #17100F;
   --cream:    #1E1614;
   --blush:    #2A1D1C;
@@ -831,43 +833,278 @@ body.theme-night {
   --shadow-lift: 0 18px 44px rgba(0,0,0,.62);
 }
 body.theme-night { background: var(--ivory); color: var(--ink); }
+html.theme-night-pre body { background: var(--ivory); color: var(--ink); }
 body.theme-night h1, body.theme-night h2, body.theme-night h3,
 body.theme-night h4 { color: #F3DED3; }
+html.theme-night-pre body h4 { color: #F3DED3; }
 body.theme-night h1 em, body.theme-night h2 em { color: var(--gold); }
+html.theme-night-pre body h1 em, html.theme-night-pre body h2 em { color: var(--gold); }
 body.theme-night .services, body.theme-night .reviews,
 body.theme-night .builder { background: var(--cream); }
+html.theme-night-pre body .builder { background: var(--cream); }
 body.theme-night .grooming, body.theme-night .team { background: #1B1413; }
+html.theme-night-pre body .grooming, html.theme-night-pre body .team { background: #1B1413; }
 body.theme-night .menu-card, body.theme-night .review-card,
 body.theme-night .visit-card, body.theme-night .faq-item,
 body.theme-night .includes-grid, body.theme-night .gb-card,
 body.theme-night .offer-card, body.theme-night .team-card,
 body.theme-night .woodlands-card { background: var(--white); border-color: var(--line); }
+html.theme-night-pre body .woodlands-card { background: var(--white); border-color: var(--line); }
 body.theme-night .fact-icon { background: var(--white); border-color: var(--gold); color: var(--gold); }
+html.theme-night-pre body .fact-icon { background: var(--white); border-color: var(--gold); color: var(--gold); }
 body.theme-night .gb-pill span, body.theme-night .gb-check > span,
 body.theme-night .groom-item { background: #1B1413; border-color: var(--line); color: #F3DED3; }
+html.theme-night-pre body .groom-item { background: #1B1413; border-color: var(--line); color: #F3DED3; }
 body.theme-night .gb-pill input:checked + span,
 body.theme-night .gb-check input:checked + span { background: #2C1F1C; border-color: var(--gold); }
+html.theme-night-pre body .gb-check input:checked + span { background: #2C1F1C; border-color: var(--gold); }
 body.theme-night .gb-loyal > span { background: #2C1F1C; }
+html.theme-night-pre body .gb-loyal > span { background: #2C1F1C; }
 body.theme-night .gb-summary, body.theme-night .final-cta { background: #3A1420; }
+html.theme-night-pre body .gb-summary, html.theme-night-pre body .final-cta { background: #3A1420; }
 body.theme-night .personal { background: var(--blush-2); }
-body.theme-night .hero-bg { filter: brightness(.6) saturate(.9); }
+html.theme-night-pre body .personal { background: var(--blush-2); }
 body.theme-night .hero-scrim {
   background:
     linear-gradient(180deg, rgba(20,7,11,.84) 0%, rgba(20,7,11,.58) 45%, rgba(20,7,11,.82) 100%),
     radial-gradient(75% 60% at 50% 45%, rgba(20,7,11,.15) 0%, rgba(20,7,11,.62) 100%);
 }
 body.theme-night .site-nav.scrolled { background: rgba(23,16,15,.95); }
+html.theme-night-pre body .site-nav.scrolled { background: rgba(23,16,15,.95); }
 body.theme-night .awning path { fill: var(--ivory); }
+html.theme-night-pre body .awning path { fill: var(--ivory); }
 body.theme-night .mb-call, body.theme-night .mb-text { background: var(--white); color: #F3DED3; }
+html.theme-night-pre body .mb-call, html.theme-night-pre body .mb-text { background: var(--white); color: #F3DED3; }
 body.theme-night .mobile-bar { background: var(--line); }
+html.theme-night-pre body .mobile-bar { background: var(--line); }
 body.theme-night .bubble { opacity: .55; }
+html.theme-night-pre body .bubble { opacity: .55; }
 body.theme-night .btn-outline { color: var(--gold); border-color: var(--gold); }
+html.theme-night-pre body .btn-outline { color: var(--gold); border-color: var(--gold); }
 body.theme-night .btn-outline:hover { background: var(--gold); color: #17100F; }
+html.theme-night-pre body .btn-outline:hover { background: var(--gold); color: #17100F; }
 body.theme-night .mi-price, body.theme-night .pack-price { color: var(--gold); }
+html.theme-night-pre body .mi-price, html.theme-night-pre body .pack-price { color: var(--gold); }
 body.theme-night, body.theme-night * { transition: background-color .5s ease, color .4s ease, border-color .4s ease; }
 
 @media (prefers-reduced-motion: reduce) {
   .bubble, .scroll-bow svg { animation: none !important; }
   .bubble { opacity: .4; }
   .scroll-trail-fill, .scroll-bow { transition: none; }
+}
+
+
+/* ---------- dark theme polish ---------- */
+body.theme-night .site-footer, html.theme-night-pre body .site-footer { background: #120C0B; }
+body.theme-night .nav-links, html.theme-night-pre body .nav-links { background: #120C0B; }
+body.theme-night .topbar, html.theme-night-pre body .topbar { background: #120C0B; }
+body.theme-night .btn-primary, html.theme-night-pre body .btn-primary { background: #8E3145; color: #FFF3EE; }
+body.theme-night .btn-primary:hover, html.theme-night-pre body .btn-primary:hover { background: #A03C52; }
+body.theme-night .btn-gold, html.theme-night-pre body .btn-gold { background: var(--gold); color: #1A1110; }
+body.theme-night .btn-book, html.theme-night-pre body .btn-book { background: var(--gold); color: #1A1110 !important; }
+body.theme-night .mb-book, html.theme-night-pre body .mb-book { background: #8E3145; color: #FFF3EE; }
+body.theme-night .scroll-trail, html.theme-night-pre body .scroll-trail { background: rgba(255,255,255,.1); }
+body.theme-night .badge, html.theme-night-pre body .badge { background: var(--gold); color: #1A1110; }
+
+/* ============================================================
+   Dark theme readability: hero, nav and light-on-dark text
+   Solid opaque colors so text holds contrast over the darkened
+   hero photograph.
+   ============================================================ */
+
+body.theme-night .hero h1,
+html.theme-night-pre body .hero h1 { color: #FFFFFF; text-shadow: 0 2px 22px rgba(0,0,0,.78); }
+body.theme-night .hero h1 em,
+html.theme-night-pre body .hero h1 em { color: #F2CE86; }
+body.theme-night .hero-sub,
+html.theme-night-pre body .hero-sub { color: #F7EFEA; text-shadow: 0 1px 14px rgba(0,0,0,.72); }
+body.theme-night .hero-sub strong,
+html.theme-night-pre body .hero-sub strong { color: #FFFFFF; }
+body.theme-night .hero .eyebrow, body.theme-night .eyebrow.light,
+html.theme-night-pre body .hero .eyebrow, html.theme-night-pre body .eyebrow.light {
+  color: #F0DCB4; text-shadow: 0 1px 10px rgba(0,0,0,.65);
+}
+body.theme-night .trust-line,
+html.theme-night-pre body .trust-line { color: #F0DCB4; text-shadow: 0 1px 10px rgba(0,0,0,.6); }
+body.theme-night .trust-line span,
+html.theme-night-pre body .trust-line span { color: rgba(255,255,255,.7); }
+body.theme-night .contact-pill,
+html.theme-night-pre body .contact-pill {
+  color: #FFFFFF; background: rgba(255,255,255,.16); border-color: rgba(255,255,255,.5);
+}
+body.theme-night .contact-pill:hover,
+html.theme-night-pre body .contact-pill:hover { background: rgba(255,255,255,.3); }
+body.theme-night .btn-ghost,
+html.theme-night-pre body .btn-ghost {
+  color: #FFFFFF; background: rgba(255,255,255,.14); border-color: rgba(255,255,255,.6);
+}
+
+/* nav */
+body.theme-night .nav-links a:not(.btn-book),
+html.theme-night-pre body .nav-links a:not(.btn-book) { color: #FFFFFF; }
+body.theme-night .site-nav.scrolled .nav-links a:not(.btn-book),
+html.theme-night-pre body .site-nav.scrolled .nav-links a:not(.btn-book) { color: #F3E4DC; }
+body.theme-night .brand-script,
+html.theme-night-pre body .brand-script { color: #FFFFFF; }
+body.theme-night .site-nav.scrolled .brand-script,
+html.theme-night-pre body .site-nav.scrolled .brand-script { color: #F3E4DC; }
+body.theme-night .brand-sub,
+html.theme-night-pre body .brand-sub { color: #E0BC78; }
+body.theme-night .site-nav.scrolled,
+html.theme-night-pre body .site-nav.scrolled { background: rgba(20,14,13,.96); }
+body.theme-night .theme-toggle,
+html.theme-night-pre body .theme-toggle {
+  color: #FFFFFF; background: rgba(255,255,255,.15); border-color: rgba(255,255,255,.5);
+}
+body.theme-night .site-nav.scrolled .theme-toggle,
+html.theme-night-pre body .site-nav.scrolled .theme-toggle { color: #F3E4DC; border-color: rgba(255,255,255,.3); }
+body.theme-night .nav-toggle span,
+html.theme-night-pre body .nav-toggle span { background: #FFFFFF; }
+
+/* topbar + footer */
+body.theme-night .topbar,
+html.theme-night-pre body .topbar { color: #F7EFEA; }
+body.theme-night .topbar strong,
+html.theme-night-pre body .topbar strong { color: #EFCB86; }
+body.theme-night .site-footer,
+html.theme-night-pre body .site-footer { color: #F0E4DE; }
+body.theme-night .footer-est,
+html.theme-night-pre body .footer-est { color: #D3C2BB; }
+body.theme-night .footer-links a,
+body.theme-night .footer-contact a:not(.btn),
+html.theme-night-pre body .footer-links a,
+html.theme-night-pre body .footer-contact a:not(.btn) { color: #F0E4DE; }
+body.theme-night .footer-copy,
+html.theme-night-pre body .footer-copy { color: #B7A6A0; }
+body.theme-night .footer-name,
+html.theme-night-pre body .footer-name { color: #F0DCB4; }
+
+/* body copy contrast bump */
+body.theme-night .section-sub, body.theme-night .fact p, body.theme-night .step p,
+body.theme-night .menu-desc, body.theme-night .faq-body, body.theme-night .team-bio,
+body.theme-night .amber-copy > p, body.theme-night .review-quote,
+body.theme-night .gb-check .gc-desc, body.theme-night .gb-pill > span em,
+body.theme-night .woodlands-copy p, body.theme-night .includes-note,
+body.theme-night .pricing-note,
+html.theme-night-pre body .section-sub, html.theme-night-pre body .fact p,
+html.theme-night-pre body .step p, html.theme-night-pre body .menu-desc,
+html.theme-night-pre body .faq-body, html.theme-night-pre body .team-bio,
+html.theme-night-pre body .amber-copy > p, html.theme-night-pre body .review-quote,
+html.theme-night-pre body .gb-check .gc-desc, html.theme-night-pre body .gb-pill > span em,
+html.theme-night-pre body .woodlands-copy p, html.theme-night-pre body .includes-note,
+html.theme-night-pre body .pricing-note { color: #D6C4BD; }
+body.theme-night .final-cta p, html.theme-night-pre body .final-cta p { color: #F5E8E2; }
+body.theme-night .gb-lines li, html.theme-night-pre body .gb-lines li { color: #EFE1DA; }
+body.theme-night .gb-note, html.theme-night-pre body .gb-note { color: #C4B0A9; }
+body.theme-night .includes-grid li, body.theme-night .heart-list li,
+html.theme-night-pre body .includes-grid li, html.theme-night-pre body .heart-list li { color: #F0E4DE; }
+
+
+/* ============================================================
+   Dark theme, final authority.
+   These override the auto-dark protection rules so no light text
+   is ever left on a light surface. Hero photo brightness untouched.
+   ============================================================ */
+html.theme-night-pre, html.theme-night-pre body,
+body.theme-night {
+  background-color: #17100F !important;
+  color: #F0E4DE !important;
+}
+html.theme-night-pre body .services, body.theme-night .services,
+html.theme-night-pre body .reviews, body.theme-night .reviews,
+html.theme-night-pre body .builder, body.theme-night .builder {
+  background-color: #1E1614 !important;
+}
+html.theme-night-pre body .grooming, body.theme-night .grooming,
+html.theme-night-pre body .personal, body.theme-night .personal,
+html.theme-night-pre body .name-note, body.theme-night .name-note,
+html.theme-night-pre body .amber, body.theme-night .amber {
+  background-color: #1B1413 !important;
+}
+html.theme-night-pre body .menu-card, body.theme-night .menu-card,
+html.theme-night-pre body .review-card, body.theme-night .review-card,
+html.theme-night-pre body .visit-card, body.theme-night .visit-card,
+html.theme-night-pre body .faq-item, body.theme-night .faq-item,
+html.theme-night-pre body .includes-grid, body.theme-night .includes-grid,
+html.theme-night-pre body .gb-card, body.theme-night .gb-card,
+html.theme-night-pre body .gb-controls, body.theme-night .gb-controls,
+html.theme-night-pre body .team-card, body.theme-night .team-card,
+html.theme-night-pre body .woodlands-card, body.theme-night .woodlands-card,
+html.theme-night-pre body .fact-icon, body.theme-night .fact-icon,
+html.theme-night-pre body .gb-pill > span, body.theme-night .gb-pill > span,
+html.theme-night-pre body .gb-check > span, body.theme-night .gb-check > span,
+html.theme-night-pre body .amber-main, body.theme-night .amber-main,
+html.theme-night-pre body .amber-award, body.theme-night .amber-award {
+  background-color: #241A18 !important;
+  border-color: #3C2C29 !important;
+}
+html.theme-night-pre body .gb-summary, body.theme-night .gb-summary,
+html.theme-night-pre body .final-cta, body.theme-night .final-cta {
+  background-color: #3A1420 !important;
+}
+html.theme-night-pre body .gb-pill input:checked + span, body.theme-night .gb-pill input:checked + span,
+html.theme-night-pre body .gb-check input:checked + span, body.theme-night .gb-check input:checked + span {
+  background-color: #33231F !important; border-color: #D9AE63 !important;
+}
+html.theme-night-pre body .gb-loyal > span, body.theme-night .gb-loyal > span {
+  background-color: #33231F !important;
+}
+
+/* headings and labels */
+html.theme-night-pre body h1, body.theme-night h1,
+html.theme-night-pre body h2, body.theme-night h2,
+html.theme-night-pre body h3, body.theme-night h3,
+html.theme-night-pre body h4, body.theme-night h4,
+html.theme-night-pre body .faq-item summary, body.theme-night .faq-item summary,
+html.theme-night-pre body .gb-pill > span, body.theme-night .gb-pill > span,
+html.theme-night-pre body .mi-name, body.theme-night .mi-name {
+  color: #FAEFE9 !important;
+}
+html.theme-night-pre body h1 em, body.theme-night h1 em,
+html.theme-night-pre body h2 em, body.theme-night h2 em {
+  color: #F2CE86 !important;
+}
+html.theme-night-pre body .eyebrow, body.theme-night .eyebrow,
+html.theme-night-pre body .gb-group legend, body.theme-night .gb-group legend,
+html.theme-night-pre body .team-role, body.theme-night .team-role,
+html.theme-night-pre body .menu-sub, body.theme-night .menu-sub {
+  color: #E6C489 !important;
+}
+
+/* body copy */
+html.theme-night-pre body p, body.theme-night p,
+html.theme-night-pre body li, body.theme-night li,
+html.theme-night-pre body .faq-body, body.theme-night .faq-body,
+html.theme-night-pre body .section-sub, body.theme-night .section-sub,
+html.theme-night-pre body .team-bio, body.theme-night .team-bio,
+html.theme-night-pre body .menu-desc, body.theme-night .menu-desc,
+html.theme-night-pre body .gb-pill > span em, body.theme-night .gb-pill > span em,
+html.theme-night-pre body .gb-check .gc-desc, body.theme-night .gb-check .gc-desc,
+html.theme-night-pre body .review-quote, body.theme-night .review-quote {
+  color: #E2D2CB !important;
+}
+html.theme-night-pre body .gb-check .gc-main, body.theme-night .gb-check .gc-main {
+  color: #FAEFE9 !important;
+}
+html.theme-night-pre body .mi-price, body.theme-night .mi-price,
+html.theme-night-pre body .gb-check .gc-main em, body.theme-night .gb-check .gc-main em {
+  color: #E6C489 !important;
+}
+
+/* hero: bright text, photo untouched */
+html.theme-night-pre body .hero h1, body.theme-night .hero h1,
+html.theme-night-pre body .hero-sub, body.theme-night .hero-sub,
+html.theme-night-pre body .hero-sub strong, body.theme-night .hero-sub strong,
+html.theme-night-pre body .final-cta h2, body.theme-night .final-cta h2,
+html.theme-night-pre body .page-head h1, body.theme-night .page-head h1 {
+  color: #FFFFFF !important;
+}
+html.theme-night-pre body .hero .eyebrow, body.theme-night .hero .eyebrow,
+html.theme-night-pre body .eyebrow.light, body.theme-night .eyebrow.light,
+html.theme-night-pre body .trust-line, body.theme-night .trust-line,
+html.theme-night-pre body .page-head-sub, body.theme-night .page-head-sub {
+  color: #F5DEB3 !important;
+}
+html.theme-night-pre body .final-cta p, body.theme-night .final-cta p {
+  color: #F7EAE4 !important;
 }

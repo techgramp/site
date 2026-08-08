@@ -188,21 +188,24 @@
 })();
 
 /* ---------- day / night theme ----------
-   Daytime palette by default, evening palette after dark, with a
-   manual toggle that is remembered for the rest of the visit. */
+   Follows the operating system's light/dark setting by default and
+   live-updates if the OS switches. A manual toggle overrides it for
+   the rest of the visit. */
 (function () {
   var btn = document.getElementById("themeToggle");
-  function isNightHour() { var h = new Date().getHours(); return h >= 19 || h < 6; }
+  var mq = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+  function manualChoice() {
+    try { return window.sessionStorage.getItem("cdaTheme"); } catch (e) { return null; }
+  }
   function apply(night) {
     document.body.classList.toggle("theme-night", night);
+    document.documentElement.classList.toggle("theme-night-pre", night);
     if (btn) {
-      btn.setAttribute("aria-label", night ? "Switch to daytime theme" : "Switch to evening theme");
+      btn.setAttribute("aria-label", night ? "Switch to light theme" : "Switch to dark theme");
       btn.setAttribute("aria-pressed", night ? "true" : "false");
     }
   }
-  var chosen = null;
-  try { chosen = window.sessionStorage.getItem("cdaTheme"); } catch (e) {}
-  apply(chosen ? chosen === "night" : isNightHour());
+  apply(manualChoice() ? manualChoice() === "night" : (mq ? mq.matches : false));
   if (btn) {
     btn.addEventListener("click", function () {
       var night = !document.body.classList.contains("theme-night");
@@ -210,11 +213,11 @@
       try { window.sessionStorage.setItem("cdaTheme", night ? "night" : "day"); } catch (e) {}
     });
   }
-  setInterval(function () {
-    var manual = null;
-    try { manual = window.sessionStorage.getItem("cdaTheme"); } catch (e) {}
-    if (!manual) apply(isNightHour());
-  }, 60000);
+  if (mq) {
+    var onChange = function () { if (!manualChoice()) apply(mq.matches); };
+    if (mq.addEventListener) mq.addEventListener("change", onChange);
+    else if (mq.addListener) mq.addListener(onChange);
+  }
 })();
 
 /* ---------- Groom Builder estimator ---------- */
