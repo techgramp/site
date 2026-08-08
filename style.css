@@ -896,7 +896,6 @@ body.theme-night, body.theme-night * { transition: background-color .5s ease, co
 
 /* ---------- dark theme polish ---------- */
 body.theme-night .site-footer, html.theme-night-pre body .site-footer { background: #120C0B; }
-body.theme-night .nav-links, html.theme-night-pre body .nav-links { background: #120C0B; }
 body.theme-night .topbar, html.theme-night-pre body .topbar { background: #120C0B; }
 body.theme-night .btn-primary, html.theme-night-pre body .btn-primary { background: #8E3145; color: #FFF3EE; }
 body.theme-night .btn-primary:hover, html.theme-night-pre body .btn-primary:hover { background: #A03C52; }
@@ -1107,4 +1106,82 @@ html.theme-night-pre body .page-head-sub, body.theme-night .page-head-sub {
 }
 html.theme-night-pre body .final-cta p, body.theme-night .final-cta p {
   color: #F7EAE4 !important;
+}
+
+/* ============================================================
+   Nav breakpoint fix
+   Six links plus the theme toggle and Book button need roughly
+   1050px; below that the row wrapped and collided with the
+   wordmark. The drawer now takes over at 1024px.
+   ============================================================ */
+.nav-links { flex-wrap: nowrap; }
+.nav-links a:not(.btn-book) { white-space: nowrap; }
+.nav-brand { flex: 0 0 auto; min-width: 0; }
+
+@media (max-width: 1140px) {
+  .nav-toggle { display: flex; position: relative; z-index: 3; }
+  .nav-links {
+    position: fixed; top: 0; right: 0; bottom: 0; width: min(82vw, 330px);
+    height: 100vh; height: 100dvh;
+    flex-direction: column; align-items: stretch; gap: 0; flex-wrap: nowrap;
+    background: #431521; background-image: none;
+    padding: 88px 26px calc(30px + env(safe-area-inset-bottom));
+    transform: translateX(100%); transition: transform .3s ease;
+    box-shadow: -10px 0 40px rgba(0,0,0,.45);
+    overflow-y: auto; -webkit-overflow-scrolling: touch;
+    z-index: 2; opacity: 1;
+  }
+  .nav-links.open { transform: translateX(0); }
+  .nav-links li { width: 100%; }
+  .nav-links a:not(.btn-book) {
+    display: block; width: 100%; color: #fff !important; font-size: 1.06rem; padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,.14) !important;
+  }
+  .nav-theme-wrap { margin-top: 14px; }
+  .nav-theme-wrap .theme-toggle { width: 100%; border-radius: 999px; gap: 8px; }
+  .nav-cta-wrap { margin-top: 12px; }
+  .nav-cta-wrap .btn-book { display: flex; width: 100%; padding: 14px 20px; font-size: 1rem; justify-content: center; }
+
+  body.menu-open .site-nav { z-index: 120; }
+  body.menu-open .site-nav, body.menu-open .site-nav.scrolled {
+    -webkit-backdrop-filter: none; backdrop-filter: none;
+    background: transparent; box-shadow: none;
+  }
+  body.menu-open .nav-links { -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .nav-backdrop {
+    position: fixed; inset: 0; z-index: 110;
+    background: rgba(30, 10, 16, .55);
+    opacity: 0; visibility: hidden; transition: opacity .3s ease, visibility .3s ease;
+  }
+  .nav-backdrop.open { opacity: 1; visibility: visible; }
+  body.menu-open .mobile-bar { display: none; }
+}
+
+@media (min-width: 1141px) and (max-width: 1300px) {
+  .nav-links { gap: 20px; }
+  .nav-links a:not(.btn-book) { font-size: .92rem; }
+  .nav-inner { padding: 0 18px; }
+}
+
+
+/* ============================================================
+   Desktop nav row stays transparent; the solid panel colour is
+   for the mobile drawer only.
+   ============================================================ */
+@media (min-width: 1141px) {
+  .nav-links,
+  body.theme-night .nav-links,
+  html.theme-night-pre body .nav-links {
+    background: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    padding: 0 !important;
+    border: 0 !important;
+  }
+}
+@media (max-width: 1140px) {
+  body.theme-night .nav-links,
+  html.theme-night-pre body .nav-links { background: #120C0B; }
 }
